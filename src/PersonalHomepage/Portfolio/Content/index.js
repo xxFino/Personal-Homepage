@@ -1,5 +1,5 @@
 import ErrorRepo from "./ErrorRepo";
-import Loading from "./LoadingRepo";
+import LoadingRepo from "./LoadingRepo";
 import SuccessfulRepo from "./SuccessfulRepo";
 
 const Content = ({ state, repositories }) => {
@@ -7,7 +7,7 @@ const Content = ({ state, repositories }) => {
         case "initial":
             return null;
         case "loading":
-            return <Loading />
+            return <LoadingRepo />
         case "error":
             return <ErrorRepo />
         case "successful":
