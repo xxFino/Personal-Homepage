@@ -11,7 +11,7 @@ function* fetchRepositoriesHandler() {
     }
     catch (error) {
         yield put(fetchRepositoriesError());
-        yield call(alert, "Wystąpił jakiś błąd, sprówbuj ponownie lub sprawdź swoje połączenie z internetem")
+        yield call(alert, "Wystąpił jakiś błąd, spróbuj ponownie lub sprawdź swoje połączenie z internetem")
     }
 }
 
