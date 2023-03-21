@@ -4,7 +4,7 @@ import { SubHeader } from "../SubHeader/styled";
 export const Wrapper = styled.section`
     margin: auto;
     margin-top: 72px;
-    background: ${({ theme }) => theme.color.white};
+    background: ${({ theme }) => theme.color.sectionBackground};
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow}, 0px 16px 58px ${({ theme }) => theme.color.shadow};
     border-radius: 4px;
     padding: 32px;

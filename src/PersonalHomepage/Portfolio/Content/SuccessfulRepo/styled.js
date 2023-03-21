@@ -16,8 +16,9 @@ export const List = styled.ul`
 export const StyledTile = styled.li`
     width: 592px;
     padding: 56px;    
-    margin: 0;    
-    background: ${({ theme }) => theme.color.white};
+    margin: 0;   
+    border: 6px solid ${({ theme }) => theme.color.border}; 
+    background: ${({ theme }) => theme.color.sectionBackground};
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow}, 0px 16px 58px ${({ theme }) => theme.color.shadow};
     border-radius: 4px;
     transition: 0.3s;

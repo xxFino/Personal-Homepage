@@ -22,9 +22,10 @@ export const EmailText = styled.a`
     letter-spacing: 0.05em;
     color: black;
     transition: 0.5s;
+    color: ${({ theme }) => theme.color.emailText};
 
     &:hover {
-    color: ${({ theme }) => theme.color.iconHover};
+    color: ${({ theme }) => theme.color.emailHover};
    }
 `;
 
@@ -48,11 +49,13 @@ export const Icon = styled.img`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.icon};
     text-decoration: none;
     transition: 0.3s;
-    
+
     &:hover {
-    color: ${({ theme }) => theme.color.iconHover};
+        svg path{
+            color: ${({ theme }) => theme.color.iconHover};
+        }
    }
 `;
