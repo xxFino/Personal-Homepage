@@ -31,6 +31,7 @@ export const Name = styled.h1`
     margin-top: 12px;
     margin-bottom: 0px;
     width: auto;
+    color: ${({ theme }) => theme.color.headers};
 `;
 
 export const Description = styled.p`
@@ -53,7 +54,7 @@ export const EmailLink = styled.a`
     border-radius: 4px;
     height: 49px;
     background: ${({ theme }) => theme.color.buttonLink}; 
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.buttonText};
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.05em;
