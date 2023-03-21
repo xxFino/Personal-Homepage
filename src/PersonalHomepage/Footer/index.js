@@ -1,9 +1,9 @@
 import { Description, EmailText, IconsContainter, LetsTalk, Wrapper, Icon, Link } from "./styled";
 import { email } from "../../base/email";
 import { ReactComponent as Github } from "./images/Github.svg";
-import facebook from "./images/Facebook.svg";
-import linkedin from "./images/LinkedIN.svg";
-import instagram from "./images/Instagram.svg";
+import { ReactComponent as Facebook } from "./images/Facebook.svg";
+import { ReactComponent as Linkedin } from "./images/Linkedin.svg";
+import { ReactComponent as Instagram } from "./images/Instagram.svg";
 
 const Footer = () => (
     <Wrapper>
@@ -18,9 +18,15 @@ const Footer = () => (
             <Link href="https://github.com/xxFino" target="_blank" title="Github">
                 <Github />
             </Link>
-            <Icon src={facebook} alt="" />
-            <Icon src={linkedin} alt="" />
-            <Icon src={instagram} alt="" />
+            <Link href="https://www.facebook.com/bartek.snochowski" target="_blank" title="Facebook">
+                <Facebook />
+            </Link>
+            <Link href="https://www.linkedin.com/in/bartłomiej-snochowski-4bb28526b/" target="_blank" title="Linkedin">
+                <Linkedin />
+            </Link>
+            <Link href="https://www.instagram.com/xzbartekx" target="_blank" title="Instagram">
+                <Instagram />
+            </Link>
         </IconsContainter>
     </Wrapper>
 );
