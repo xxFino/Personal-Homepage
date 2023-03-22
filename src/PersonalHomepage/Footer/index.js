@@ -1,4 +1,4 @@
-import { Description, EmailText, IconsContainter, LetsTalk, Wrapper, Icon, Link } from "./styled";
+import { Description, EmailText, IconsContainter, LetsTalk, Wrapper, Link } from "./styled";
 import { email } from "../../base/email";
 import { ReactComponent as Github } from "./images/Github.svg";
 import { ReactComponent as Facebook } from "./images/Facebook.svg";
