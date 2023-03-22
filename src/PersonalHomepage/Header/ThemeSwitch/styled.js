@@ -28,7 +28,7 @@ export const Text = styled.p`
     line-height: 1.3;  
     color: ${({ theme }) => theme.color.textSecondary};
 
-    @media (max-width: 767px) {
+    @media (max-width: 946px) {
         display: none;
    };
 `;

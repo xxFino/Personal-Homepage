@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
     display: grid;  
     grid-template-columns: auto auto auto;      
     margin-top: 115px;
-    grid-gap: 66px;
 
     @media (max-width: 767px) { 
         display: flex;
@@ -31,6 +30,11 @@ export const Photo = styled.img`
 export const Informations = styled.div`
     display: grid;
     align-self: center;
+    margin-left: 66px;
+
+    @media (max-width: 767px) {
+        margin-left: 16px;
+    }
 `;
 
 export const ThisIs = styled.p`
