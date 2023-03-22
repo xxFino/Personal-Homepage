@@ -10,7 +10,7 @@ const Header = () => (
         <Informations>
             <ThisIs>THIS IS</ThisIs>
             <Name>Bartłomiej Snochowski</Name>
-            <Description>👨🏻‍💻👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.</Description>
+            <Description>💻🌐 I'm a starting Frontend Developer and I especially like to program with React, currently I'm looking for new job to improve my skills and learn something new.</Description>
             <EmailLink href={`mailto:${email}`} title={email}>
                 <Envelope src={envelope} alt="" />
                 Hire me
