@@ -11,6 +11,11 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     max-width: 1216px;
+
+    @media (max-width: 767px) {
+        margin: 24px 16px 0 16px;
+        gap: 16px
+    }
 `;
 
 export const StyledTile = styled.li`
@@ -25,11 +30,17 @@ export const StyledTile = styled.li`
     &:hover{
         border: 6px solid ${({ theme }) => theme.color.borderHover};
     }
+
+    @media (max-width: 767px) {
+        width: 288px;
+        padding: 24px;    
+    }
 `;
 
 export const Container = styled.div`
     font-weight: 400;
     font-size: 18px;
+    
 `;
 
 export const TileTitle = styled.h3`
@@ -39,11 +50,22 @@ export const TileTitle = styled.h3`
     line-height: 29px;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.tileTitle};
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
 `;
 
 export const TileDescription = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em;
+    color: ${({ theme }) => theme.color.textSecondary};
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 `;
 
 export const LinksWrapper = styled.div`
@@ -53,7 +75,13 @@ export const LinksWrapper = styled.div`
     line-height: 1.4;
     display: grid;
     grid-template-columns: 4em 1fr;
+    word-break: break-all;
     color: ${({ theme }) => theme.color.textSecondary};
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 `;
 
 export const Link = styled.a`

@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     margin-top: 72px;
+
+    @media (max-width: 767px) {
+        margin-top: 48px;
+    }
 `;
 
 export const Header = styled.header`
@@ -28,4 +32,9 @@ export const LastProjects = styled.h3`
     letter-spacing: 0.05em;
     margin-top: 8px;
     margin-bottom: 0;
+
+    @media (max-width: 767px) {
+        margin-top: 16px;
+        font-size: 17px;
+    }
 `;

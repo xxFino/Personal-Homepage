@@ -1,20 +1,36 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`    
+export const Wrapper = styled.div` 
+    max-width: 1216px;
     display: grid;  
-    grid-template-columns: auto auto auto;    
-    grid-gap: 66px;  
-    margin-top: 115px;  
+    grid-template-columns: auto auto auto;      
+    margin-top: 115px;
+    grid-gap: 66px;
+
+    @media (max-width: 767px) { 
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-left: 16px;
+        grid-gap: 0;
+    }
 `;
 
 export const Photo = styled.img`
     width: 398px;
     height: 398px;
     border-radius: 50%;   
+    
+    @media (max-width: 767px) {
+        width: 132px;
+        height: 132px;
+        margin-bottom: 13px;
+    }
 `;
 
 export const Informations = styled.div`
-    margin-top: 43px;
+    display: grid;
+    align-self: center;
 `;
 
 export const ThisIs = styled.p`
@@ -32,16 +48,28 @@ export const Name = styled.h1`
     margin-bottom: 0px;
     width: auto;
     color: ${({ theme }) => theme.color.headers};
+
+    @media (max-width: 767px) {
+        margin-top: 8px;
+        font-size: 22px;
+        line-height: 27px;
+    }
 `;
 
 export const Description = styled.p`
-    width: 633px;
+    display: grid;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
     margin-top: 35px;
     margin-bottom: 32px;
     color: ${({ theme }) => theme.color.textSecondary};
+
+    @media (max-width: 767px) {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        margin-right: 29px;
+    }
 `;
 
 export const EmailLink = styled.a`
