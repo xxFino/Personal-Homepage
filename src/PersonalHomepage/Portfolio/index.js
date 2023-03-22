@@ -19,7 +19,7 @@ const Portolio = () => {
     return (
         <Wrapper>
             <Header>
-                <Link href="https://github.com/xxFino" target="_blank">
+                <Link href="https://github.com/xxFino" target="_blank" title="Github">
                     <Icon src={github} alt="" />
                 </Link>
                 <SubHeader>Portolio</SubHeader>
