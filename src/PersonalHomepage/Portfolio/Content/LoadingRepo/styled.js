@@ -16,6 +16,11 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     margin-top: 88px;
+
+    @media (max-width: 767px) {
+        margin-left: 16px;
+        margin-right: 16px
+    }
 `;
 
 export const Info = styled.p`
@@ -24,6 +29,11 @@ export const Info = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em;
     margin-bottom: 48px;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
 `;
 
 export const IconSpinner = styled(Spinner)`
