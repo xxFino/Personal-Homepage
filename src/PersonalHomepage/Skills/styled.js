@@ -12,6 +12,7 @@ export const Wrapper = styled.section`
     @media (max-width: 767px) {
         margin-top: 48px;
         margin-left: 16px;
+        margin-right: 16px;
     }
 `;
 
