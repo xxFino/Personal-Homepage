@@ -17,6 +17,8 @@ export const themeLight = {
         iconHover: "#0366D6",
         emailText: "#000000",
         emailHover: "#0366D6",
+        themeSwitchBackground: "#E5E5E5",
+        toggleBackground: "#6E7E91",
     },
 };
 
@@ -39,5 +41,7 @@ export const themeDark = {
         iconHover: "#2188FF",
         emailText: "#FFFFFF",
         emailHover: "#2188FF",
+        themeSwitchBackground: "#363636B8",
+        toggleBackground: "#FFFFFF",
     },
 };
