@@ -90,6 +90,10 @@ export const EmailLink = styled.a`
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.05em;
+
+    &:hover {
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.color.textSecondary};
+   }
 `;
 
 export const Envelope = styled.img`
