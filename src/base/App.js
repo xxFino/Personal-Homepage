@@ -7,7 +7,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { themeDark, themeLight } from "./theme";
 
 export const App = () => {
-  const darkModeOff = useSelector(selectIsDarkTheme)
+  const darkModeOff = useSelector(selectIsDarkTheme);
 
   return (
     <ThemeProvider theme={darkModeOff ? themeDark : themeLight}>
