@@ -9,7 +9,7 @@ const Footer = () => (
     <Wrapper>
         <LetsTalk>LET'S TALK!</LetsTalk>
         <EmailText href={`mailto:${email}`} title={email}>
-            bartlomiej.snochowski@gmail.com
+            {email}
         </EmailText>
         <Description>
         Hello! I am open to new cooperation and learning new things. If you want to contact me, go ahead!
