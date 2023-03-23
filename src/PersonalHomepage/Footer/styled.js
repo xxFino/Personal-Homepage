@@ -70,11 +70,11 @@ export const IconsContainter = styled.div`
 export const Link = styled.a`
     color: ${({ theme }) => theme.color.icon};
     text-decoration: none;
-    transition: 0.3s;
 
     &:hover {
         svg path{
             color: ${({ theme }) => theme.color.iconHover};
+            transition: 0.5s;
         }
    }
 `;
