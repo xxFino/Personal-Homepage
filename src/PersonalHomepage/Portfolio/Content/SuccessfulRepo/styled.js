@@ -31,8 +31,7 @@ export const StyledTile = styled.li`
         border: 6px solid ${({ theme }) => theme.color.borderHover};
     }
 
-    @media (max-width: 767px) {
-        width: 288px;
+    @media (max-width: 767px) {                
         padding: 24px;    
     }
 `;
@@ -74,7 +73,7 @@ export const LinksWrapper = styled.div`
     padding-bottom: 8px;
     line-height: 1.4;
     display: grid;
-    grid-template-columns: 4em 1fr;
+    grid-template-columns: 3.5em 1fr;
     word-break: break-all;
     color: ${({ theme }) => theme.color.textSecondary};
 
@@ -86,5 +85,10 @@ export const LinksWrapper = styled.div`
 
 export const Link = styled.a`
     text-decoration: none;
-    color: ${({ theme }) => theme.color.tileLink};
+    color: ${({ theme }) => theme.color.tileLink};    
+
+    &:hover {
+        transition: 0.5s;
+        color: ${({ theme }) => theme.color.textSecondary}
+    }
 `;
