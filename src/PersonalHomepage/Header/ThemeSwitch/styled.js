@@ -39,7 +39,7 @@ export const IconWrapper = styled.div`
     border: 1px solid grey;
     display: flex;
     padding: 2px;
-    border-radius: 10px;
+    border-radius: 12px;
 `;
 
 export const Toogle = styled.img`
