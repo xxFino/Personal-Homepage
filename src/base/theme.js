@@ -24,7 +24,7 @@ export const themeLight = {
 
 export const themeDark = {
     color: {
-        background: "#000000",
+        background: "#252525",
         headers: "#FFFFFF",
         buttonText: "#FFFFFF",
         textSecondary: "#FFFFFF",
