@@ -1,8 +1,14 @@
 import { Container, Link, LinksWrapper, List, StyledTile, TileDescription, TileTitle } from "./styled";
 
-const SuccessfulRepo = ({ repositories }) => (
+const SuccessfulRepo = ({ repositories }) => {
+
+    const githubPortoflio = repositories.filter(
+        ({ name }) => name !== "Bartlomiej-Snochowski"
+    );
+    
+    return (
     <List>
-        {repositories && repositories.map(({ id, name, description, html_url, homepage }) => (
+        {githubPortoflio.map(({ id, name, description, html_url, homepage }) => (
             <StyledTile key={id}>
                 <Container>
                     <TileTitle>{name}</TileTitle>
@@ -21,6 +27,7 @@ const SuccessfulRepo = ({ repositories }) => (
             </StyledTile>
         ))}
     </List>
-);
+    );
+};
 
 export default SuccessfulRepo;
